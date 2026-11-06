@@ -338,13 +338,11 @@ export default function DadosPage() {
 
               <div className="lg:col-span-4 lg:flex lg:justify-end">
                 <Link
-                  href="https://calendly.com/contato-dados-imejr/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/agendamento?area=dados"
                   className="btn-primary justify-center w-full sm:w-auto"
                   style={{ background: accent, color: "#101010" }}
                 >
-                  Fale com a equipe
+                  Solicitar reunião
                   <ArrowRight size={16} />
                 </Link>
               </div>

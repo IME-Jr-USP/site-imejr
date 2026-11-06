@@ -6,7 +6,7 @@ import type { ActivityStory } from "@/data/initiatives";
 export default function ActivityMedia({ media, className = "", wide = false }: { media: ActivityStory["media"]; className?: string; wide?: boolean }) {
   return (
     <figure className={className}>
-      <div className={`activity-media relative ${wide ? "aspect-video" : "aspect-[4/3]"} overflow-hidden bg-[#1A1A1A]`}>
+      <div className={`${media.src ? "" : "activity-media"} relative ${wide ? "aspect-video" : "aspect-[4/3]"} overflow-hidden bg-[#1A1A1A]`}>
         {media.src ? (
           <Image src={media.src} alt={media.alt} fill sizes="(min-width: 1024px) 560px, (min-width: 768px) 50vw, 100vw" className="object-cover" />
         ) : (
@@ -19,7 +19,6 @@ export default function ActivityMedia({ media, className = "", wide = false }: {
           </div>
         )}
       </div>
-      <figcaption className="mt-3 text-xs leading-relaxed text-[#A0A0A0]">{media.caption}</figcaption>
     </figure>
   );
 }

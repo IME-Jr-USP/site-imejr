@@ -19,26 +19,28 @@ export default function Hero() {
       />
 
       {/* animate-hero aplica stagger fade-in-up nos filhos diretos */}
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-28 pb-32 animate-hero">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-12 animate-hero">
 
         {/* 1 */}
-        <p className="type-secondary mb-8" style={{ color: "#A0A0A0" }}>
-          IME Jr · Computação e Dados · USP
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-8" style={{ color: "#5E5E5E" }}>
+          Empresa Júnior de Informática, Matemática e Estatística
         </p>
 
         {/* 2 */}
-        <h1 className="brand-heading text-[clamp(2.5rem,6.5vw,6rem)] text-white mb-8">
-          Código para criar.
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white leading-[1.0] tracking-tight mb-8">
+          Computação.
           <br />
-          <span style={{ color: "#FFDA33" }}>Dados para ir além.</span>
+          Dados.{" "}
+          <span style={{ color: "#FFDA33" }}>Educação.</span>
         </h1>
 
         <div className="max-w-2xl mx-auto mb-10">
-          <p className="type-secondary mb-2" style={{ color: "#FFDA33" }}>
-            Construímos tecnologia e transformamos dados em decisões.
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-2" style={{ color: "#FFDA33" }}>
+            Talento USP para resolver problemas reais.
           </p>
-          <p className="type-secondary" style={{ color: "#A0A0A0" }}>
-            Da primeira ideia ao próximo desafio, com o talento de quem faz USP.
+          <p className="text-xs font-semibold uppercase tracking-[0.2em]" style={{ color: "#5E5E5E" }}>
+            Apoiados pelo ecossistema de excelência da Universidade de São Paulo,
+            criamos soluções sob medida para transformar o seu desafio em resultado.
           </p>
         </div>
 
@@ -52,10 +54,6 @@ export default function Hero() {
             Fale conosco
           </a>
         </div>
-        <a href="/atividades" className="inline-flex items-center gap-2 mt-8 text-sm text-[#A0A0A0] hover:text-white transition-colors">
-          Além dos serviços, tem muito mais por aqui
-          <ArrowRight size={15} aria-hidden="true" />
-        </a>
       </div>
 
       {/* Scroll cue — wrapper faz o fadeIn, filho faz o bounce */}

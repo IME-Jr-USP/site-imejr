@@ -3,12 +3,20 @@ DirectoryIndex index.html
 # Keep image files out of search indexes, including when linked by other sites.
 # Do not disallow these URLs in robots.txt: crawlers must read this header.
 <IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
   <FilesMatch "(?i)\.(avif|bmp|gif|ico|jpe?g|png|svg|tiff?|webp)$">
     Header always set X-Robots-Tag "noindex, noimageindex"
   </FilesMatch>
 </IfModule>
 
 RewriteEngine On
+
+# Production hosting: the admin login must always be loaded over HTTPS.
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://imejr.com%{REQUEST_URI} [R=308,L]
+
 
 # Serve Next static-export pages without requiring the .html extension.
 RewriteCond %{REQUEST_FILENAME} !-d

@@ -80,6 +80,20 @@
 }
 
 @layer components {
+  .booking-input {
+    @apply w-full rounded-md border border-[#383838] bg-[#181818] px-3 py-3 text-sm text-white;
+    color-scheme: dark;
+  }
+
+  .booking-input:focus {
+    outline: 2px solid #FFDA33;
+    outline-offset: 2px;
+  }
+
+  .booking-label {
+    @apply text-sm font-semibold text-white;
+  }
+
   .type-secondary,
   .section-label {
     @apply font-sans text-xs font-semibold uppercase tracking-[0.2em] leading-relaxed;

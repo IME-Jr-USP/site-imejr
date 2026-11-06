@@ -10,7 +10,6 @@ export type ActivityStory = {
   media: {
     src?: string;
     alt: string;
-    caption: string;
     motif: "statistics" | "code" | "learning";
   };
 };
@@ -27,8 +26,8 @@ export const events: ActivityStory[] = [
     href: "https://amostra.ime.usp.br/",
     linkLabel: "Conheça a aMostra",
     media: {
-      alt: "Espaço reservado para uma fotografia da aMostra de Estatística",
-      caption: "aMostra de Estatística · espaço para registros do evento",
+      src: "/atividades/amostra.jpg",
+      alt: "Identidade visual da aMostra de Estatística",
       motif: "statistics",
     },
   },
@@ -43,8 +42,8 @@ export const events: ActivityStory[] = [
     href: "https://symcomp.ime.usp.br/semana",
     linkLabel: "Explore a Semana da Computação",
     media: {
-      alt: "Espaço reservado para uma fotografia da Semana da Computação",
-      caption: "SymComp · espaço para registros da Semana",
+      src: "/atividades/semana-computacao.jpg",
+      alt: "Arte da XVI Semana da Computação",
       motif: "code",
     },
   },
@@ -62,8 +61,8 @@ export const initiatives: ActivityStory[] = [
     href: "https://www.instagram.com/imensina.usp/",
     linkLabel: "Acompanhe o IMEnsina",
     media: {
-      alt: "Espaço reservado para uma fotografia das aulas do Cursinho IMEnsina",
-      caption: "IMEnsina · espaço para registros das aulas",
+      src: "/atividades/imensina.jpg",
+      alt: "Identidade visual do Cursinho IMEnsina",
       motif: "learning",
     },
   },
@@ -79,14 +78,13 @@ export const initiatives: ActivityStory[] = [
     linkLabel: "Explore as aulas no YouTube",
     media: {
       alt: "Espaço reservado para uma imagem de uma aula do canal da IME Jr",
-      caption: "YouTube IME Jr · espaço para destaque de uma aula",
       motif: "code",
     },
   },
 ];
 
 export const talksMedia: ActivityStory["media"] = {
-  alt: "Espaço reservado para uma fotografia de palestra ou visita a uma empresa",
-  caption: "Palestras e visitas a empresas · imagem a definir",
+  src: "/atividades/palestras.png",
+  alt: "Arte das palestras da IME Jr com uma apresentação em sala de aula.",
   motif: "code",
 };

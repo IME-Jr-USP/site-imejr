@@ -3,17 +3,19 @@
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import Image from "next/image";
 import { navigation } from "@/data/navigation";
+import { socialLinks } from "@/data/socials";
 
 const socials = [
-  { icon: Facebook, href: "https://facebook.com/IMEJuniorUSP", label: "Facebook" },
-  { icon: Instagram, href: "https://www.instagram.com/imejr.usp/", label: "Instagram" },
-  { icon: Linkedin, href: "https://br.linkedin.com/company/imejr", label: "LinkedIn" },
-  { icon: Youtube, href: "https://www.youtube.com/channel/UCc4ePc_uJuRT-4ZtZCG-xPw", label: "YouTube" },
+  { icon: Facebook, ...socialLinks.facebook },
+  { icon: Instagram, ...socialLinks.instagram },
+  { icon: Linkedin, ...socialLinks.linkedin },
+  { icon: Youtube, ...socialLinks.youtube },
 ];
 
 const navLinks = [
   ...navigation,
   { label: "Contato", href: "/#contato" },
+  { label: "Área da equipe", href: "/admin" },
 ];
 
 export default function Footer() {

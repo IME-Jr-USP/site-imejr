@@ -4,3 +4,5 @@ node_modules/
 out/
 tsconfig.tsbuildinfo
 w
+# Private scheduling config and development email previews
+.booking-private/
