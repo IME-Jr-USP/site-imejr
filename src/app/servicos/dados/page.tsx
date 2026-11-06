@@ -98,7 +98,7 @@ const technologies = [
 ];
 
 export const metadata: Metadata = {
-  title: "Análise de Dados | IME Jr",
+  title: "Dados | IME Jr",
   description:
     "Soluções de análise de dados da IME Jr para empresas, pesquisadores, iniciações científicas e projetos acadêmicos.",
   keywords: [
@@ -137,7 +137,7 @@ export const metadata: Metadata = {
 export default function DadosPage() {
   return (
     <>
-      <Navbar logoOnly />
+      <Navbar />
       <main style={{ background: "#000000" }}>
         <section
           className="pt-32 pb-24"
@@ -147,7 +147,7 @@ export default function DadosPage() {
             <div className="grid lg:grid-cols-12 gap-12 items-end">
               <Reveal className="lg:col-span-8" y={18}>
                 <p className="section-label mb-4" style={{ color: accent }}>
-                  Serviços / Análise de Dados
+                  Serviços / Dados
                 </p>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight max-w-5xl">
                   Dados bem analisados para decisões melhores e pesquisas mais
@@ -198,7 +198,7 @@ export default function DadosPage() {
         <section className="py-24" style={{ background: "#000000" }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <Reveal className="max-w-3xl mb-14">
-              <p className="section-label mb-4">Frentes de atuação</p>
+              <p className="section-label mb-4" style={{ color: accent }}>Frentes de atuação</p>
               <h2 className="section-title">
                 De dashboards a modelos estatísticos, cuidamos do caminho entre
                 dado bruto e resposta.
@@ -233,7 +233,7 @@ export default function DadosPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-12 gap-14">
               <Reveal className="lg:col-span-5">
-                <p className="section-label mb-4">Como trabalhamos</p>
+                <p className="section-label mb-4" style={{ color: accent }}>Como trabalhamos</p>
                 <h2 className="section-title mb-5">
                   Método claro para sair da pergunta e chegar na evidência.
                 </h2>
@@ -266,7 +266,7 @@ export default function DadosPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               <Reveal className="lg:col-span-5">
-                <p className="section-label mb-4">Stack flexível</p>
+                <p className="section-label mb-4" style={{ color: accent }}>Stack flexível</p>
                 <h2 className="section-title mb-5">
                   Ferramentas escolhidas pelo tipo de dado e pelo objetivo da
                   análise.
@@ -338,13 +338,11 @@ export default function DadosPage() {
 
               <div className="lg:col-span-4 lg:flex lg:justify-end">
                 <Link
-                  href="https://calendly.com/contato-dados-imejr/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/agendamento?area=dados"
                   className="btn-primary justify-center w-full sm:w-auto"
-                  style={{ background: accent, color: "#ffffff" }}
+                  style={{ background: accent, color: "#101010" }}
                 >
-                  Fale com a equipe
+                  Solicitar reunião
                   <ArrowRight size={16} />
                 </Link>
               </div>

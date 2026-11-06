@@ -16,7 +16,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 
-const accent = "#357DED";
+const accent = "#FFDA33";
 
 const pillars = [
   {
@@ -137,7 +137,7 @@ export const metadata: Metadata = {
 export default function ComputacaoPage() {
   return (
     <>
-      <Navbar logoOnly />
+      <Navbar />
       <main style={{ background: "#000000" }}>
         <section
           className="pt-32 pb-24"
@@ -165,7 +165,7 @@ export default function ComputacaoPage() {
                   <Link
                     href="#comece-seu-projeto"
                     className="btn-primary justify-center"
-                    style={{ background: accent, color: "#ffffff" }}
+                    style={{ background: accent, color: "#101010" }}
                   >
                     Conversar sobre um projeto
                     <ArrowRight size={16} />
@@ -214,7 +214,7 @@ export default function ComputacaoPage() {
                 >
                   <div
                     className="w-10 h-10 rounded-lg flex items-center justify-center mb-5"
-                    style={{ background: "#357DED18", border: "1px solid #357DED35" }}
+                    style={{ background: "#FFDA3318", border: "1px solid #FFDA3335" }}
                   >
                     <Icon size={18} style={{ color: accent }} />
                   </div>
@@ -308,14 +308,14 @@ export default function ComputacaoPage() {
               className="animated-service-gradient rounded-lg p-8 md:p-12 grid lg:grid-cols-12 gap-10 items-center"
               style={{
                 background:
-                  "linear-gradient(135deg, rgba(53,125,237,0.18) 0%, #1A1A1A 42%, rgba(53,125,237,0.08) 62%, #101010 100%)",
-                border: "1px solid #357DED35",
+                  "linear-gradient(135deg, rgba(255,218,51,0.18) 0%, #1A1A1A 42%, rgba(255,218,51,0.08) 62%, #101010 100%)",
+                border: "1px solid #FFDA3335",
               }}
             >
               <div className="lg:col-span-8">
                 <div
                   className="w-12 h-12 rounded-lg flex items-center justify-center mb-6"
-                  style={{ background: accent, border: "1px solid #6FA2FF" }}
+                  style={{ background: accent, border: "1px solid #FFE578" }}
                 >
                   <Image
                     src="/logo.png"
@@ -336,13 +336,11 @@ export default function ComputacaoPage() {
 
               <div className="lg:col-span-4 lg:flex lg:justify-end">
                 <Link
-                  href="https://calendly.com/contato-computacao-imejr/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/agendamento?area=computacao"
                   className="btn-primary justify-center w-full sm:w-auto"
-                  style={{ background: accent, color: "#ffffff" }}
+                  style={{ background: accent, color: "#101010" }}
                 >
-                  Fale com a equipe
+                  Solicitar reunião
                   <ArrowRight size={16} />
                 </Link>
               </div>

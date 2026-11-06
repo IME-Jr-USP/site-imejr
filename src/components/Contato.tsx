@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import Link from "next/link";
+import { Mail, MapPin, Phone, Send, ArrowRight } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
 const contactInfo = [
@@ -68,6 +69,7 @@ export default function Contato() {
             <p className="section-label mb-4">Fale conosco</p>
             <h2 className="section-title mb-8">Entre em Contato</h2>
 
+            <Link href="/agendamento" className="inline-flex items-center gap-3 text-[#FFDA33] font-bold mb-8 hover:underline">Solicitar uma reunião <ArrowRight size={16} /></Link>
             <div className="space-y-6">
               {contactInfo.map(({ icon: Icon, label, value, href, external }) => (
                 <div key={label} className="flex gap-4">
@@ -191,9 +193,7 @@ export default function Contato() {
                   >
                     <option value="">Selecione uma área</option>
                     <option value="computacao">Computação</option>
-                    <option value="dados">Análise de Dados</option>
-                    <option value="educacao">Educação</option>
-                    <option value="ps">Processo Seletivo</option>
+                    <option value="dados">Dados</option>
                     <option value="outro">Outro</option>
                   </select>
                 </div>

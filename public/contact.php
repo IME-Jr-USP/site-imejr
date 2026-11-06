@@ -40,9 +40,7 @@ if ($company !== '') {
 
 $areaLabels = [
   'computacao' => 'Computação',
-  'dados' => 'Análise de Dados',
-  'educacao' => 'Educação',
-  'ps' => 'Processo Seletivo',
+  'dados' => 'Dados',
   'outro' => 'Outro',
 ];
 

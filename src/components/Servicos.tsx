@@ -8,7 +8,7 @@ const services = [
   {
     slug: "computacao",
     num: "01",
-    accent: "#357DED",
+    accent: "#FFDA33",
     title: "Computação",
     description:
       "Criamos, evoluímos e integramos soluções digitais completas, de sistemas web a produtos com Machine Learning e automações inteligentes.",
@@ -30,7 +30,7 @@ const services = [
     slug: "dados",
     num: "02",
     accent: "#FFDA33",
-    title: "Análise de Dados",
+    title: "Dados",
     description:
       "Transformamos dados em clareza, seja para decisões empresariais, pesquisas acadêmicas ou projetos científicos.",
     body:
@@ -46,25 +46,6 @@ const services = [
     ],
     note:
       "Unimos estatística, programação e visão analítica para entregar resultados compreensíveis, bem fundamentados e úteis para o seu objetivo.",
-  },
-  {
-    slug: "educacao",
-    num: "03",
-    accent: "#D62839",
-    title: "Educação",
-    description:
-      "Desenvolvemos projetos voltados a instituições educacionais, estudantes do ensino básico e iniciativas pré-vestibulares.",
-    body:
-      "Nossa equipe trabalha com editoração de questões, materiais didáticos, divulgação matemática e com o cursinho Pré-vestibular IMEnsina.",
-    highlights: [
-      "Materiais didáticos",
-      "Editoração de questões",
-      "Divulgação matemática",
-      "Projetos de ensino com tecnologia",
-      "Apoio a iniciativas educacionais",
-    ],
-    note:
-      "Atuamos especialmente no ensino de matemática e no uso de recursos tecnológicos em sala de aula.",
   },
 ];
 
@@ -118,7 +99,7 @@ export default function Servicos() {
                   className="btn-primary text-sm whitespace-nowrap"
                   style={{
                     background: s.accent,
-                    color: s.accent === "#FFDA33" ? "#101010" : "#ffffff",
+                    color: "#101010",
                   }}
                 >
                   Saiba mais

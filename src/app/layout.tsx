@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "IME Jr — Tecnologia, Dados e Educação com Excelência USP",
+  title: "IME Jr — Tecnologia e Dados com Excelência USP",
   description:
-    "Soluções em tecnologia, dados e educação desenvolvidas por estudantes da USP, unindo rigor técnico, pesquisa e visão prática para desafios reais.",
+    "Soluções em tecnologia e dados desenvolvidas por estudantes da USP, unindo rigor técnico, pesquisa e visão prática para desafios reais.",
   keywords: [
     "IME Jr",
     "USP",
@@ -12,7 +12,6 @@ export const metadata: Metadata = {
     "excelência USP",
     "tecnologia USP",
     "dados USP",
-    "educação USP",
     "empresa júnior",
     "empresa júnior USP",
     "empresa júnior tecnologia",
@@ -20,7 +19,6 @@ export const metadata: Metadata = {
     "tecnologia",
     "análise de dados",
     "ciência de dados",
-    "educação",
     "desenvolvimento de software",
     "desenvolvimento web",
     "sistemas sob medida",
@@ -35,11 +33,19 @@ export const metadata: Metadata = {
     "estatística aplicada",
     "consultoria em tecnologia",
     "consultoria em dados",
-    "projetos educacionais",
-    "materiais didáticos",
     "São Paulo",
     "Brasil",
   ],
+  robots: {
+    index: true,
+    follow: true,
+    noimageindex: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+    },
+  },
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",

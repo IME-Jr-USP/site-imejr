@@ -14,9 +14,9 @@ type Lider = {
 };
 
 const AREA_COLORS: Record<string, { bg: string; text: string; border: string }> = {
-  Computação: { bg: "#357DED18", text: "#357DED", border: "#357DED30" },
+  Computação: { bg: "#FFDA3318", text: "#FFDA33", border: "#FFDA3330" },
   Dados: { bg: "#FFDA3318", text: "#FFDA33", border: "#FFDA3330" },
-  Educação: { bg: "#D6283918", text: "#D62839", border: "#D6283930" },
+  Educação: { bg: "#FFDA3318", text: "#FFDA33", border: "#FFDA3330" },
 };
 
 const TEAM_PHOTO_URL =

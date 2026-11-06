@@ -22,33 +22,15 @@ export default function Sobre() {
               style={{ color: "#A0A0A0" }}
             >
               Atendemos pessoas físicas e jurídicas que buscam soluções em
-              Computação, Análise de Dados e Educação.
+              Computação e Análise de Dados. Também mantemos iniciativas de Educação, como o Cursinho IMEnsina.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-2">
-              {[
-                "IME-USP",
-                "100% universitários",
-                "Desde 1991",
-                "CNPJ 26.531.013/0001-80",
-              ].map((tag) => (
-                <span
-                  key={tag}
-                  className="text-xs font-semibold px-3 py-1.5 rounded border"
-                  style={{
-                    border: "1px solid #2E2E2E",
-                    color: "#5E5E5E",
-                    background: "transparent",
-                  }}
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
+            <p className="type-secondary mt-8 text-[#A0A0A0]">IME-USP · Desde 1991 · 100% universitários</p>
+            <p className="text-xs text-[#777777] mt-3">CNPJ 26.531.013/0001-80</p>
           </Reveal>
 
           {/* Right: numbers */}
-          <div className="grid grid-cols-2 gap-px" style={{ background: "#2E2E2E" }}>
+          <div className="grid grid-cols-2 gap-x-8 gap-y-10 lg:gap-y-16">
             {[
               { end: 3, suffix: "", label: "áreas de atuação" },
               { end: 30, suffix: "+", label: "anos de história" },
@@ -57,8 +39,7 @@ export default function Sobre() {
             ].map((s) => (
               <div
                 key={s.label}
-                className="flex flex-col justify-center p-10"
-                style={{ background: "#101010" }}
+                className="flex flex-col justify-center border-t border-[#2E2E2E] pt-6"
               >
                 <span className="text-5xl font-black mb-2" style={{ color: "#FFDA33" }}>
                   <CountUp end={s.end} suffix={s.suffix} />

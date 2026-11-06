@@ -63,7 +63,12 @@
 }
 
 @layer base {
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+  :focus-visible {
+    outline: 2px solid var(--color-yellow);
+    outline-offset: 4px;
+  }
 
   body {
     @apply font-sans antialiased;
@@ -75,6 +80,68 @@
 }
 
 @layer components {
+  .booking-input {
+    @apply w-full rounded-md border border-[#383838] bg-[#181818] px-3 py-3 text-sm text-white;
+    color-scheme: dark;
+  }
+
+  .booking-input:focus {
+    outline: 2px solid #FFDA33;
+    outline-offset: 2px;
+  }
+
+  .booking-label {
+    @apply text-sm font-semibold text-white;
+  }
+
+  .type-secondary,
+  .section-label {
+    @apply font-sans text-xs font-semibold uppercase tracking-[0.2em] leading-relaxed;
+  }
+
+  .brand-heading {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+  }
+
+  .activity-text-link {
+    @apply inline-flex items-center gap-3 pb-2 text-sm font-semibold transition-colors;
+    color: #FFFFFF;
+    border-bottom: 1px solid #5E5E5E;
+  }
+
+  .activity-text-link:hover {
+    color: var(--color-yellow);
+    border-color: var(--color-yellow);
+  }
+
+  .activity-media {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 36px 36px;
+  }
+
+  .activity-media::before {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 90%;
+    top: 5%;
+    left: 17%;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50%;
+    transform: rotate(-35deg);
+  }
+
+  .activity-media-symbol { font-family: "Inter", sans-serif; font-weight: 800; letter-spacing: -0.04em; }
+
+  .activity-video-lines {
+    background: repeating-linear-gradient(125deg, transparent 0 45px, #5E5E5E 46px, transparent 47px 90px);
+  }
+
   .btn-primary {
     @apply inline-flex items-center gap-2 font-bold px-6 py-3 rounded-lg
            transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0;
@@ -95,7 +162,6 @@
   }
 
   .section-label {
-    @apply text-xs font-semibold uppercase tracking-widest;
     color: var(--color-text-subtle);
   }
 

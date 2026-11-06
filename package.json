@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "booking:preview": "php -S 127.0.0.1:8080 -t out scripts/booking-preview.php",
+    "test:booking": "php tests/booking.php",
+    "test:admin": "php tests/booking.php && php tests/selection.php"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",
